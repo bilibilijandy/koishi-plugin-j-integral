@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-j-integral",
   "description": "一个简单的插件系统",
-  "version": "0.0.1",
+  "version": "1.0.2",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
@@ -9,14 +9,27 @@
     "dist"
   ],
   "license": "MIT",
-  "scripts": {},
+  "homepage": "https://forum.koishi.xyz/t/topic/9467", 
   "keywords": [
     "chatbot",
     "koishi",
-    "plugin"
+    "plugin",
+    "积分",
+    "系统"
   ],
-  "devDependencies": {},
   "peerDependencies": {
     "koishi": "^4.18.0"
+  },
+
+  "koishi": {
+    "description": {
+      "en": "A simple points plugin",
+      "zh": "一款简单的积分插件"
+    },
+    "service": {
+      "required": ["database"],
+      "optional": [],
+      "implements": []
+    }
   }
 }
